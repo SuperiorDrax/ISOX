@@ -9,9 +9,9 @@ import torch.nn.functional as F
 # from timm.models.layers import DropPath
 from torch.utils.checkpoint import checkpoint
 
-class PModel(nn.Module):
+class ISOX(nn.Module):
     def __init__(self, input_time, output_num):
-        super(PModel, self).__init__()
+        super(ISOX, self).__init__()
         # Drop path rate is linearly increased as the depth increases
         # No more drop path
         # drop_path_list = torch.linspace(0, 0.2, 8)
